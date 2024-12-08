@@ -217,16 +217,16 @@
 
 
 // //?basit algoritmik örnekler
-for(let i=0;i<10;i++){
-    if (i==2 || i==3){
-        console.log(i)
-    }
-    if(i==5){
-        break
-    }
+// for(let i=0;i<10;i++){
+//     if (i==2 || i==3){
+//         console.log(i)
+//     }
+//     if(i==5){
+//         break
+//     }
 //     //çıktıya göre i sadece 2 ve 3e eşit oludğunda consola yazdıracatır => 2,3 
 //     //i 5'e eşit olduğunda ise döngü kıralacaktır
-}
+// }
 
 
 // for(let i=0;i<10;i++){
@@ -239,12 +239,18 @@ for(let i=0;i<10;i++){
 //     if (i==0){
 //         console.log(i)
 //     }
-//     //kodun akışına göre bakıldığında ilk if de i hem 3 hemde 8 e eşit olamaz bu yüzden ilk if çalışmaz
-//     //ikinci ifde ise i sıfıra eşit olucağı için ekrana sadece sıfır yazdırır => 0 
 // }
 
 // //? 0 ile 100 sayılarının arasında 25 in katı 
-// //? olan sayıların toplamını hesaplayıp ekrana yazdıran Javascript kodunu yazınız.
+// //? olan sayıların toplamını hesaplayıp ekrana 
+// yazdıran Javascript kodunu yazınız.
+
+
+
+
+
+
+
 
 // toplam=0
 // for(let i=0; i<100; i++){
@@ -266,16 +272,24 @@ for(let i=0;i<10;i++){
 
 // }
 
+// for(let i=0; i<5;i++){
+//     console.log(`bu ilk Forun dönme sayısı ${i+1}`)
+//     for(let j=0;j<=2;j++){
+//         console.log(`Bu ikinci Forun dönme sayısı ${j+1}`)
+//     }
+// }
+
+
+
+
+
 // // * İç iç döngülerde ters yönde çalışacak şekilde değiştirebilirsiniz. 
 // // * Bunun için j değerini i'den başlayarak azaltabilirsiniz.
 
-// for(let i=0; i<=5; i++){
-//     for(let j=i; j>=0; j--){
-//         console.log(j);
-//     }
-// } // 0,1,0,2,1,0,3,2,1,0,4,3,2,1,0,5,4,3,2,1,0
 
-// //*0'dan 3'a kadar olan sayıları 3 kere yazdırın
+// *0'dan 3'a kadar olan sayıları 3 kere yazdırın
+
+
 // for(let i=1;i<3;i++){
 //     for(let j=0;j<3;j++){
 //         console.log(i)
@@ -302,6 +316,17 @@ for(let i=0;i<10;i++){
 //     console.log("\n");
 // }
 
+// console.log("Çarpım Tablosu\n--------------");
+// for(let i=1; i<=10;i++){
+//     for(let y=1; y<=10; y++){
+//         console.log(`${i} x ${y} = ${i*y}`);
+//     }
+//     console.log("\n");
+// }
+
+
+
+
 // //!FOREACH
 // //*forEach bir döngü çeşididir ve dizi üzerinde her bir eleman için tekrarlayan bir işlem yapmanıza olanak sağlar. 
 // //*forEach yöntemi, her bir elemana uygulanan bir geri çağırma fonksiyonunu çalıştırır.
@@ -313,8 +338,9 @@ for(let i=0;i<10;i++){
 
 
 // let diller = ["js","php","c#","c","c++","python"]
-// .forEach(element => {
-//     console.log(element)
+// .forEach((yasin, index) => {
+//     console.log(yasin)
+//     console.log(index)
 // });
 
 // * paramatreli foreach kullanımı örneği;
@@ -363,6 +389,35 @@ for(let i=0;i<10;i++){
 //     console.log(element.kadi) //mehmet,semra,rojin => toplu olarak duran kullanıcıların sadece kullanıcı isimlerini getirir
 // });
 
+// let sinif = [
+//     {
+//         ad:"yasin",
+//         soyad:"Ozdemir"
+//     },
+//     {
+//         ad:"İbrahim",
+//         soyad:"Kalafat"
+//     },
+//     {
+//         ad:"yasin2",
+//         soyad:"Ozdemir2"
+//     },
+//     {
+//         ad:"İbrahim2",
+//         soyad:"Kalafat2"
+//     },
+
+// ]
+// sinif.forEach(Element => {
+//     console.log(Element.ad)
+// });
+
+
+
+
+
+
+
 
 // //*dizi içerisinde küçük harflerle oluşturulan isimleri büyük harflerle bir dizide toplamak
 // let names = ["ahmet","mehmet","meryem","rojin","semra"]
@@ -385,12 +440,28 @@ for(let i=0;i<10;i++){
 // const numbers2 = [2, 3, 4, 5];
 // let sum = 0;
 // let product = 1;
-// numbers.forEach( element => {
+// numbers2.forEach( element => {
 //   sum += element;
 //   product *= element;
 // });
 // console.log("Toplam: " + sum);
 // console.log("Çarpım: " + product);
+
+
+let sayilar = [2,3,4,5,6,7,8,9]
+let toplam = 0
+let carpim = 1
+
+sayilar.forEach( Element => {
+    toplam += Element;
+    carpim *= Element;
+})
+
+console.log(`Toplam: ${toplam}`)
+console.log(`Çarpım: ${carpim}`)
+
+
+
 
 
 
