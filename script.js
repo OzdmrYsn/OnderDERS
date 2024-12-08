@@ -2,7 +2,7 @@
 // //LOOPS (DÖNGÜLER)
 // //?döngüler belirli başlı tekrar eden kod bloklarını çalıştırmak için kullanılır
 // //?tekrar eden kodları otomatikleştirmek ve kodu daha verimli hale getirmek için kullanılır
-
+asdasd
 // //*for döngüsü kullanımı
 
 // // for(baslangicDegeri;kosul;artisDegeri){
