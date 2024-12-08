@@ -2,7 +2,7 @@
 // //LOOPS (DÖNGÜLER)
 // //?döngüler belirli başlı tekrar eden kod bloklarını çalıştırmak için kullanılır
 // //?tekrar eden kodları otomatikleştirmek ve kodu daha verimli hale getirmek için kullanılır
-asdasd
+
 // //*for döngüsü kullanımı
 
 // // for(baslangicDegeri;kosul;artisDegeri){
@@ -12,6 +12,11 @@ asdasd
 // for(let i=0;i<10;i++){
 //     console.log(i)
 // }
+// for(let i=0;i<20;i+=2){
+//     console.log(i)
+// }
+
+
 
 // i+=2
 // Döngüyü 2şer 2şer Arttırmamıza yaramaktadır.
@@ -29,6 +34,11 @@ asdasd
 
 
 // Belirtilen sayı aralığının karesini yazan döngü oluşturun
+
+// for (let i=0;i<10;i++){
+//     console.log(`${i} sayısının karesi: ${i*i}'dir.`)
+// }
+
 
 
 // for(let i=0;i<10;i++){
@@ -68,6 +78,42 @@ asdasd
 // for(let i=0;i<kullanicilar.length;i++){
 //     console.log(kullanicilar[i])
 
+// let sinif =[
+//     {
+//     ad : "Yasin",
+//     soyad : "Özdemir"
+// },
+// {
+//     ad : "Mehmet",
+//     soyad : "Özdemir2"
+// },
+// {
+//     ad : "Elif",
+//     soyad : "Özdemir3"
+// },
+// {
+//     ad : "eray",
+//     soyad : "Özdemir4"
+// },
+// ]
+
+// for (let i=0;i<sinif.length;i++){
+//     console.log(sinif[i].ad)
+// }
+
+
+
+
+
+
+// for (let i=0;i<sinif.length;i++){
+//     console.log(sinif[i].ad)
+
+//     console.log(sinif[i].soyad)
+
+// }
+    
+
 
 // //*obje içerisindeki verilere ulaşmak için;
 // for(let i=0;i<kullanicilar.length;i++){
@@ -83,6 +129,19 @@ asdasd
 //     console.log(i) //0,1,2,3
 // }
 
+// for (let i=0; i<10;i++){
+    
+//     if(i==6){
+//         break
+//     }
+//     console.log(i)
+ 
+// }
+
+
+
+
+
 // //*console.log() yer değiştirmesine göre çıktı değişebilir
 // for(let i=0;i<10;i++){
 //     console.log(i) //0,1,2,3,4
@@ -91,7 +150,7 @@ asdasd
 //     }
 // }
 
-// //?continue () => döngüde geride kalan kısımları atlayarak bir sonraki iterasona geçmenizi sağlar
+// //?continue () => dögüde gerinde kalan kısımları atlayarak bir sonraki iterasona geçmenizi sağlar
 // for(let i=0;i<8;i++){
 //     if(i==5){
 //         continue
@@ -99,7 +158,16 @@ asdasd
 //     console.log(i) //0,1,2,3,4,6,7
 // }
 
-// Dizi = [3, 8, 12, 5, 7, 20, 15, 2, 18]
+// for (let i=0; i<10;i++){
+
+//     if(i==5){
+//         continue
+//     }
+
+//     console.log(i)
+// }
+
+
 
 
 // ÖDÜLLÜ SORU !!!!!!
@@ -126,21 +194,39 @@ asdasd
 // }
 
 // console.log(Sayi)
+// let Dizi = [3, 8, 12, 5, 7, 20, 15, 2, 18,15,18,9]
+// let Toplam = 0
+// let TekToplam = 0
+
+
+// for(i=0;i<Dizi.length;i++){
+//     let KontrolDegisken = Dizi[i]
+
+//     if(KontrolDegisken %2 == 0){
+//         Toplam +=KontrolDegisken
+//     }else{
+//         TekToplam+=KontrolDegisken
+//     }
+// }
+
+// console.log(`${Toplam}'sayısı tüm dizilerin içerisindeki çiftlerin toplamıdır.`)
+// console.log(`${TekToplam}'sayısı tüm dizilerin içerisindeki teklerin toplamıdır.`)
+// console.log(`${Toplam+TekToplam}'sayısı tüm dizilerin içerisindeki sayıların toplamıdır.`)
 
 
 
 
 // //?basit algoritmik örnekler
-// for(let i=0;i<10;i++){
-//     if (i==2 || i==3){
-//         console.log(i)
-//     }
-//     if(i==5){
-//         break
-//     }
+for(let i=0;i<10;i++){
+    if (i==2 || i==3){
+        console.log(i)
+    }
+    if(i==5){
+        break
+    }
 //     //çıktıya göre i sadece 2 ve 3e eşit oludğunda consola yazdıracatır => 2,3 
 //     //i 5'e eşit olduğunda ise döngü kıralacaktır
-// }
+}
 
 
 // for(let i=0;i<10;i++){
