@@ -1,104 +1,65 @@
- 
-// //LOOPS (DÖNGÜLER)
-// //?döngüler belirli başlı tekrar eden kod bloklarını çalıştırmak için kullanılır
-// //?tekrar eden kodları otomatikleştirmek ve kodu daha verimli hale getirmek için kullanılır
+// // //!fonksiyonlar
+// // *JavaScript'te fonksiyonlar, belirli bir işlevi gerçekleştiren ve tekrar tekrar kullanılabilen kod bloklarıdır. 
+// // *Fonksiyonlar, programın düzenini sağlar, kodu daha okunabilir hale getirir ve işleri modüler bir şekilde yapmayı sağlar.
 
-// //*for döngüsü kullanımı
 
-// // for(baslangicDegeri;kosul;artisDegeri){
-//    //?işlecek kodlar 
+// let kAdi = prompt("Kullanıcı Adı Giriniz")
+
+// if(kAdi =="Yasin"){
+//     OrtalamaHesapla()
+// }else{
+//     console.log("Yanlış Giriş Yaptınız");
+// }
+
+// function OrtalamaHesapla() {
+//     let sinav1 = +prompt("1. Sınavı Giriniz?")
+//     let sinav2 = +prompt("2. Sınavı Giriniz?")
+//     let sinav3 = +prompt("3. Sınavı Giriniz?")
+
+//     let ortalama = (sinav1+sinav2+sinav3)/3
+
+//     console.log(ortalama);
+// }
+// 
+// OrtalamaHesapla()
+
+// function mesajVer (){
+//     console.log("fonksiyon çalıştı")
+// }
+
+// mesajVer() //*yazılan fonksiyon istenilen yerde çağırılır ve işleve sokulur
+// // /******************************************* */
+
+// // myFunction2() //*foksiyon ilk etapta çağırılıp ardından tanımlanabilir
+// // function myFunction2(){
+// //     console.log("fonksiyon 2 çağırıldı!")
 // // }
 
-// for(let i=0;i<10;i++){
-//     console.log(i)
-// }
-// for(let i=0;i<20;i+=2){
-//     console.log(i)
-// }
+// // /****************************************** */
+// // function ortalamaHesapla(){
+// //     let sinav1 = +prompt("1. Sınavı Giriniz")
+// //     let sinav2 = +prompt("2. Sınavı Giriniz")
+// //     let ortlama = (sinav1 + sinav2) / 2
+// //     console.log(`Ortalamanız : ${ortlama}`)
+// // }
 
+// // let sifre = prompt("Sınav Ortalama Uygulamasına Hoşgeldiniz! Şifrenizi Giriniz")
+// // if(sifre=="123"){
+// //     ortalamaHesapla() //*bir şart içerisinde şarta bağlı olarak fonksiyon çağrılabilir
+// // }
+// // else{
+// //     console.log("Hatalı Şifre Girdiniz!");
+// // }
 
+// // /******************************** */
 
-// i+=2
-// Döngüyü 2şer 2şer Arttırmamıza yaramaktadır.
+// // //?Fonksiyon Parametreleri:
+// // //*Fonksiyonlara parametreler ekleyebilirsiniz. Parametreler, fonksiyonun içinde kullanılmak üzere girdi değerlerini alır. İşte bir parametreli fonksiyon örneği
+// let isim = prompt("Lütfen Adınızı Giriniz?")
+// selamla(isim)
 
-// for(let i=1;i<100;i+=2){
-//     console.log(i)
-// }
-
-
-
-
-// for(let i=0;i<10;i++){
-//     console.log(i)
-// }
-
-
-// Belirtilen sayı aralığının karesini yazan döngü oluşturun
-
-// for (let i=0;i<10;i++){
-//     console.log(`${i} sayısının karesi: ${i*i}'dir.`)
-// }
-
-
-
-// for(let i=0;i<10;i++){
-//     console.log(`${i}sayısının kendisi ile çarpımı ${i*i}`)
-// }
-
-// //?bir dizi içerisindeli verileri tek tek gezinmek
-// //*dizideki elemanları index numarasına göre seçer ve verileri getirir
-// let renkler = ["kırmızı","mavi","sarı","beyaz"]
-// for(let i=0;i<renkler.length;i++){
-//     console.log(renkler[i])
-// }
-
-
-
-// //?dizi içerisinde objelerden oluşan toplu veriler arasında geiznmek
-
-// let kullanicilar = [
-//     {
-//         ad:"mehmet",
-//         soyad:"coban"
-//     },
-//     {
-//         ad:"yasin",
-//         soyad:"özdemir"
-//     },
-//     {
-//         ad:"mehmetcim",
-//         soyad:"çobanım"
-//     },
-//     {
-//         ad:"yasinim",
-//         soyad:"özdemirim"
-//     },
-// ]
-// //*doğrudan objelere ulaşır
-// for(let i=0;i<kullanicilar.length;i++){
-//     console.log(kullanicilar[i])
-
-// let sinif =[
-//     {
-//     ad : "Yasin",
-//     soyad : "Özdemir"
-// },
-// {
-//     ad : "Mehmet",
-//     soyad : "Özdemir2"
-// },
-// {
-//     ad : "Elif",
-//     soyad : "Özdemir3"
-// },
-// {
-//     ad : "eray",
-//     soyad : "Özdemir4"
-// },
-// ]
-
-// for (let i=0;i<sinif.length;i++){
-//     console.log(sinif[i].ad)
+// function selamla(value){
+//     console.log(`Hoşgeldin! ${value}`)
 // }
 
 
@@ -106,482 +67,339 @@
 
 
 
-// for (let i=0;i<sinif.length;i++){
-//     console.log(sinif[i].ad)
+// // let girilenIsim = prompt("Lütfen Adınızı Giriniz")
+// // selamla(girilenIsim)
 
-//     console.log(sinif[i].soyad)
+// // /********************************************** */
 
-// }
-    
+// // function toplam(a,b){
+// //     return a + b //*return ise fonksiyon çalıştığında bize geri dönecek olan değeri temsil eder   
+// // }
+// // console.log(toplam(10,40)) //*oluşturulan fonksiyon içerisinde birden fazla parametre barındırılabilir. Sıraya bağlı olarak parametrelere değerler gönderilir
 
-
-// //*obje içerisindeki verilere ulaşmak için;
-// for(let i=0;i<kullanicilar.length;i++){
-//     console.log(kullanicilar[i].ad)
-// }
-
-
-// //?break (döngüyü kırmak) => döngü break ifadesini gördüğü anda artık çalışmayı bırakır
-// for(let i=0;i<10;i++){
-//     if(i==4){
-//         break
-//     }
-//     console.log(i) //0,1,2,3
+// function toplam(a,b){
+//     return a+b
 // }
 
-// for (let i=0; i<10;i++){
-    
-//     if(i==6){
-//         break
-//     }
-//     console.log(i)
- 
+// function cikar(a,b){
+//     return a-b
 // }
 
+// console.log(toplam(10,20));
 
+// // /***********************************************/
 
+// // //?örnekler
+// // //*kullanıcıdan virgüllerle ayırılarak en sevdiği renkleri sorunuz!
+// // //*ardından yazdığınız bir fonksiyon sayesinde parametre göndererek bu dizinin uzunluğunu bulunuz
 
-
-// //*console.log() yer değiştirmesine göre çıktı değişebilir
-// for(let i=0;i<10;i++){
-//     console.log(i) //0,1,2,3,4
-//     if(i==4){
-//         break
-//     }
+// function uzunlukBul(uzunluk){
+//     return uzunluk.length //? diziden gelen değerinin uzunluğunu bulup, değeri geri gönderiyoruz
 // }
 
-// //?continue () => dögüde gerinde kalan kısımları atlayarak bir sonraki iterasona geçmenizi sağlar
-// for(let i=0;i<8;i++){
-//     if(i==5){
-//         continue
-//     }
-//     console.log(i) //0,1,2,3,4,6,7
-// }
+// let enSevilenRenkler = prompt("Lütfen Sevdiğiniz Renkleri Yazınız").split(",") //?split kullanıcının girdiği her değeri virgülden sonra parçalar ve bir dizi elemanı haline getirir
+// let diziUzunlugu =  uzunlukBul(enSevilenRenkler) //?fonksiyondan gelen değeri bir değişkene aktarabiliriz
+// console.log(`Dizinin Uzunluğu : ${diziUzunlugu}`)
 
-// for (let i=0; i<10;i++){
 
-//     if(i==5){
-//         continue
-//     }
 
-//     console.log(i)
-// }
+function uzunlukBulma(Sayi){
+    return Sayi.length
+}
 
+let renkler = prompt("En Sevdiğiniz renkleri giriniz? , kullanarak").split(",")
+let DizininUzunlugu = uzunlukBulma(renkler)
+console.log(`Dizinin Uzunluğu : ${DizininUzunlugu}`);
 
 
 
-// ÖDÜLLÜ SORU !!!!!!
-// Dizi içerisindeki sayıların SADECE ÇİFT OLANLARINI For döngüsüyle toplatıp ekrana yazdırın.
-// Yapabilene Kahve.
 
 
 
 
+// // /*************************************** */
 
+// // //*bir metin ve bir sayıyı kullanıcıdan alınız,
+// // //*metini kullanıcın verdiği sayı kadar fonksiyon kullanarak tekrar tekrar yanyana bir değişkende birleştiriniz
 
-
-
-
-
-
-// Sayi = 0
-
-// for(let i=0; i<Dizi.length;i++){
-//     let DiziSayilar = Dizi[i]
-//     if (DiziSayilar %2 == 0) {
-//         Sayi +=DiziSayilar
-//     }
-// }
-
-// console.log(Sayi)
-// let Dizi = [3, 8, 12, 5, 7, 20, 15, 2, 18,15,18,9]
-// let Toplam = 0
-// let TekToplam = 0
-
-
-// for(i=0;i<Dizi.length;i++){
-//     let KontrolDegisken = Dizi[i]
-
-//     if(KontrolDegisken %2 == 0){
-//         Toplam +=KontrolDegisken
-//     }else{
-//         TekToplam+=KontrolDegisken
-//     }
-// }
-
-// console.log(`${Toplam}'sayısı tüm dizilerin içerisindeki çiftlerin toplamıdır.`)
-// console.log(`${TekToplam}'sayısı tüm dizilerin içerisindeki teklerin toplamıdır.`)
-// console.log(`${Toplam+TekToplam}'sayısı tüm dizilerin içerisindeki sayıların toplamıdır.`)
-
-
-
-
-// //?basit algoritmik örnekler
-// for(let i=0;i<10;i++){
-//     if (i==2 || i==3){
-//         console.log(i)
-//     }
-//     if(i==5){
-//         break
-//     }
-//     //çıktıya göre i sadece 2 ve 3e eşit oludğunda consola yazdıracatır => 2,3 
-//     //i 5'e eşit olduğunda ise döngü kıralacaktır
-// }
-
-
-// for(let i=0;i<10;i++){
-//     if(i==3 && i==8){
-//         if(i==3){
-//             console.log(i)
-//         }
-//         break
-//     }
-//     if (i==0){
-//         console.log(i)
-//     }
-// }
-
-// //? 0 ile 100 sayılarının arasında 25 in katı 
-// //? olan sayıların toplamını hesaplayıp ekrana 
-// yazdıran Javascript kodunu yazınız.
-
-
-
-
-
-
-
-
-// toplam=0
-// for(let i=0; i<100; i++){
-//     if (i%25==0){
-//         toplam+=i
-//     }
-// }
-// console.log(`0-100 arasında 25'in katı olan sayıların toplamı : ${toplam}`); // 0-100 arasında 25'in katı olan sayıların toplamı : 150
-
-// //?iç içe for kullanımı
-// //*for yapısının iç içe kullanım amacı daha karmaşık yapılarda yapıyı kolay hale getirmek için kullanılır
-// //*iç içe çalışan döngülerde dışardaki döngü bir kere çalıştıktan sonra içerideki döngüye geçilir
-// //*içerdeki döngü tamamen görevini bitirdikten sonra duşardaki döngü bir arttırılır ve yeniden içerdeki döngü çalışır
-
-// for(let i=0;i<=5;i++){
-//     for(let j=0;j<2;j++){
-//         console.log(i+j)
-//     }
-
-// }
-
-// for(let i=0; i<5;i++){
-//     console.log(`bu ilk Forun dönme sayısı ${i+1}`)
-//     for(let j=0;j<=2;j++){
-//         console.log(`Bu ikinci Forun dönme sayısı ${j+1}`)
-//     }
-// }
-
-
-
-
-
-// // * İç iç döngülerde ters yönde çalışacak şekilde değiştirebilirsiniz. 
-// // * Bunun için j değerini i'den başlayarak azaltabilirsiniz.
-
-
-// *0'dan 3'a kadar olan sayıları 3 kere yazdırın
-
-
-// for(let i=1;i<3;i++){
-//     for(let j=0;j<3;j++){
-//         console.log(i)
-//     }
-//     //1,1,1,2,2,2
-// }
-
-// //* Çarpım tablosunu consol'a hesaplayarak yazdıran iç içe for örneği
-// ÖDÜLLÜ SORU!!!!!!!
-// BİLENE KAHVE
-
-
-
-
-
-
-
-
-// console.log("Çarpım Tablosu\n--------------");
-// for(let i=1; i<=10; i++) {
-//     for(let j=1; j<=10; j++) {
-//         console.log(i + " x " + j + " = " + i*j);
-//     }
-//     console.log("\n");
-// }
-
-// console.log("Çarpım Tablosu\n--------------");
-// for(let i=1; i<=10;i++){
-//     for(let y=1; y<=10; y++){
-//         console.log(`${i} x ${y} = ${i*y}`);
-//     }
-//     console.log("\n");
-// }
-
-
-
-
-// //!FOREACH
-// //*forEach bir döngü çeşididir ve dizi üzerinde her bir eleman için tekrarlayan bir işlem yapmanıza olanak sağlar. 
-// //*forEach yöntemi, her bir elemana uygulanan bir geri çağırma fonksiyonunu çalıştırır.
-
-
-// // array.forEach(element => {
-//     //*hazır yapıda kullanıldığında array alanına varolan dizinizi döndürmenize yarar
-// // });
-
-
-// let diller = ["js","php","c#","c","c++","python"]
-// .forEach((yasin, index) => {
-//     console.log(yasin)
-//     console.log(index)
-// });
-
-// * paramatreli foreach kullanımı örneği;
-// let diller2 = ["js","php","c#","c","c++","python"];
-// diller2.forEach((element, index) => {
-//     console.log(`Dil: ${element}, Index: ${index}`);
-// }); 
-
-
-
-// // Dil: js, Index: 0 \n Dil: php, Index: 1 \n Dil: c#, Index: 2 \n Dil: c, Index: 3 \n Dil: python, Index: 5 \n Dil: c++, Index: 4
-
-// //*basit bir örnekle dizide var olan sayıların toplamını bir değişkende toplayalım
-
-// let fiyatlar= [20,40,50,15,76]
-// let toplamFiyat = 0
-// fiyatlar.forEach(element => {
-//     toplamFiyat+=element
-// });
-// console.log(toplamFiyat);
-
-// //?toplu dizi obje mantığındada foreach kolay bir sistem sağlıyabilir
-// let newKullanicilar = [
-//     {
-//         id:1,
-//         kadi:"mehmet",
-//         sifre:123
-//     },
-//     {
-//         id:2,
-//         kadi:"semra",
-//         sifre:456
-//     },
-//     {
-//         id:3,
-//         kadi:"rojin",
-//         sifre:789
-//     },
-// ]
-
-// newKullanicilar.forEach(element => {
-//     console.log(element) //doğrudan objeleri diziden ayrıştırarak getirir {},{},{}
-// });
-
-// newKullanicilar.forEach(element => {
-//     console.log(element.kadi) //mehmet,semra,rojin => toplu olarak duran kullanıcıların sadece kullanıcı isimlerini getirir
-// });
-
-// let sinif = [
-//     {
-//         ad:"yasin",
-//         soyad:"Ozdemir"
-//     },
-//     {
-//         ad:"İbrahim",
-//         soyad:"Kalafat"
-//     },
-//     {
-//         ad:"yasin2",
-//         soyad:"Ozdemir2"
-//     },
-//     {
-//         ad:"İbrahim2",
-//         soyad:"Kalafat2"
-//     },
-
-// ]
-// sinif.forEach(Element => {
-//     console.log(Element.ad)
-// });
-
-
-
-
-
-
-
-
-// //*dizi içerisinde küçük harflerle oluşturulan isimleri büyük harflerle bir dizide toplamak
-// let names = ["ahmet","mehmet","meryem","rojin","semra"]
-// names.forEach((element,index) => {
-//     names[index] = element.toUpperCase() //topUpperCase küçük harfleri büyük harfe dönüştürür
-// });
-// console.log(names)
-
-// //*dizi içerisinden pozitif sayıları bulunuz
-// let numbers = [-1,-3,4,2,1,-5]
-// let pozitifSayilar = []
-// numbers.forEach(element => {
-//     if(element>0){
-//         pozitifSayilar.push(element) //push dizi içerisine yeni elemanlar ekler
-//     }
-// });
-// console.log(pozitifSayilar)
-
-// //*dizi içerisindeki elemanların toplamını ve çarpımını bulunuz
-// const numbers2 = [2, 3, 4, 5];
-// let sum = 0;
-// let product = 1;
-// numbers2.forEach( element => {
-//   sum += element;
-//   product *= element;
-// });
-// console.log("Toplam: " + sum);
-// console.log("Çarpım: " + product);
-
-
-let sayilar = [2,3,4,5,6,7,8,9]
-let toplam = 0
-let carpim = 1
-
-sayilar.forEach( Element => {
-    toplam += Element;
-    carpim *= Element;
-})
-
-console.log(`Toplam: ${toplam}`)
-console.log(`Çarpım: ${carpim}`)
-
-
-
-
-
-
-// //!for of
-// //*JavaScript'te bir dizi, dize veya iterable (yineleyici) nesne üzerinde dolaşmak için kullanılan bir döngüdür. 
-// //*Bu döngü, her bir elemanı teker teker almanızı sağlar.
-
-// let elements = ["a","b","c","d","e"]
-// for (const iterator of elements) {
-//     console.log(iterator); //a,b,c,d,e
-// }
-
-// // *dizideki elemanları for of döngüsü ile tersten yazdırma;
-
-// let elements2 = ["a","b","c","d","e"];
-// elements2.reverse();
-// for (const iterator of elements2) {
-//     console.log(iterator); //e,d,c,b,a
-// }
-
-// //!for in 
-// //*for of ile aynı çalışır fakat elimize index numarası olarak veriyi gönderir
-// for (const key in elements) {
-//     console.log(key)
-// }
-
-// const rehber = [
-//     {
-//         "isim":"mehmet",
-//         "numara":"2345678"
-//     },
-//     {
-//         "isim":"meryem",
-//         "numara":"2345678"
-//     },
-//     {
-//         "isim":"rojin",
-//         "numara":"2345678"
-//     },
-// ]
-
-// for (const iterator in rehber) {
-//     console.log(iterator) //0,1,2
-// }
-
-// for (const iterator in rehber) {
-//     console.log(rehber[iterator].isim) //mehmet,meryem,rojin
-// }
-
-// for (const iterator in rehber) {
-//     console.log(`İsim: ${rehber[iterator].isim}, Numara: ${rehber[iterator].numara}`);
-// } // İsim: mehmet, Numara: 2345678 \n İsim: meryem, Numara: 2345678 \n İsim: rojin, Numara: 2345678
-
-// //!for await
-// // * asenkron iterasyonları desteklemek için kullanılan bir döngüdür. 
-// // *Bir iterable üzerindeki asenkron işlemleri sırayla gerçekleştirmek için kullanılır. 
-
-// // Asenkron bir işlemi simüle eden bir fonksiyon
-// function delay(ms) {
-//   return new Promise(resolve => setTimeout(resolve, ms));
-// }
-
-// (async function () {
-//   const sayilar = [1, 2, 3, 4, 5];
-
-//   for await (let sayi of sayilar) {
-//     await delay(1000);  // Her bir sayı için 1 saniye bekle
-//     console.log(sayi);
+// function tekrarla(metin, sayi) {
+//   let tekrar = "";
+//   for (let i = 0; i < sayi; i++) {
+//     tekrar += metin;
 //   }
-// })();
-
-
-// //!while
-// //While döngüsü, içerisinde tanımlanan koşul sağlandığı sürece belirli komut ifadesi grubunun çalıştırılmasını sağlar. 
-// //Şart ifadesinin doğruluğu her döngünün başında kontrol edilir, buna göre döngünün içerisindeki komut ifadeleri çalıştırılmaya devam eder ya da döngü sona erer.
-// // Eğer şart sağlanmıyorsa while hiç çalıştırılmaz.
-
-// let i=0;
-// while (i<20){
-//    console.log(i)
-//    i++
+//   return tekrar;
 // }
 
-// //* Genellikle sonsuz döngüler için kullanılır.
-//  let j=0
-//  while(true) {
-//     j++
-//    console.log(j)
-//    if(j==100) {  
-//        break
-//    }
+// let girilenMetin = prompt("Lütfen Metin Giriniz");
+// let girilenSayi = +prompt("kaç defa tekrarlasın ? ");
+
+// let gelenVeri = tekrarla(girilenMetin, girilenSayi);
+// console.log(`Tekrara Alınan Metin : ${gelenVeri}`);
+
+// // /**************************************** */
+
+// // //*bir dizinin içerisindeki verilerden çift olanları filreleyip bize geri dizi olarak döndürünüz
+// // let sayilar = [1, 4, 3, 10, 30, 50, 13, 17, 16, 20, 73, 47, 89];
+
+// // function ciftSayilar(sayi) {
+// //   let ciftData = sayi.filter((element) => element % 2 == 0);
+// //   return ciftData;
+// // }
+
+// // console.log(ciftSayilar(sayilar))
+
+// //*bir fonksiyon oluşturunuz bu fonksiyon alınan parametre değerine göre rastgele rakamsal şifre üretmiş olsun
+// //*rastgele üretilecek olan şifrenin uzunluğunu kullanıcı belirtsin!
+
+// let rakamlar = ["0","1","2","3","4","5","6","7","8","9"]
+
+// function createPass(gelenSifre){
+//     let olusanSifre = ""
+//     for(let i=0;i<gelenSifre;i++){
+//         olusanSifre += rakamlar[Math.floor(Math.random() * rakamlar.length)]
+//     }
+//     return olusanSifre
 // }
 
-// //*Örnek
-// //While ile kullanicidan alinan sayinin faktöriyelini hesaplama yöntemi.
+// let sifreUzunluk = +prompt("Lütfen Şifre Uzunluğunu Giriniz")
+// let sifre = createPass(sifreUzunluk)
 
-// let girilenSayi=+prompt("Lütfen Faktöriyelini hesaplamak istediğiniz sayiyi giriniz") //faktöriyelini hesaplicağimiz sayi
-// let faktoriyel=1
-// while(girilenSayi>0){
-//     faktoriyel *= girilenSayi //sayiyi faktoriyel ile çarpar
-//     girilenSayi-- //sayiyi bir azaltir
-// }
-// document.write(faktoriyel) //faktöriyeli hesaplanan sayimizi web sayfasina bastirir
+// console.log(`Oluşturulan Şifre : ${sifre}`)
 
-// //!do-while
-// //do-while döngüsü, while döngüsüne benzer, ancak farklı olarak koşul değerlendirmesi döngünün sonunda gerçekleştirilir.
-// //Bu da demektir ki, do bloğu en az bir kez çalıştırılır ve ardından koşul kontrol edilir. Eğer koşul doğru ise döngü devam eder, 
-// //aksi halde döngü sonlanır.
 
-// //*yapısı
-// // let i = 0
-// // do{
-// //     yapılacak işler
-// //     i++
-// // }while(//şart sağlandığı sürece)
+// //! Faktoriyel Hesaplama kodunu yazdıralım
 
-// let doWhileSayi=0
-// do{
-//     console.log(`Do While Çıktısı : ${doWhileSayi}`)
-//     doWhileSayi++
-// }
-// while(doWhileSayi<10)
+// function faktoriyel(n) {
+//     if (n === 0 || n === 1) {
+//       return 1;
+//     } else {
+//       return n * faktoriyel(n - 1);
+//     }
+//   }
+  
+//   let faktoriyelSonucu = faktoriyel(5);
+//   console.log(faktoriyelSonucu); // Çıktı: 120
 
+// //! Dizi elamanlarını toplayan function yazdıralım
+
+// function diziToplami(dizi) {
+//     let toplam = 0;
+//     for (let i = 0; i < dizi.length; i++) {
+//       toplam += dizi[i];
+//     }
+//     return toplam;
+//   }
+  
+//   let sayilar = [2, 4, 6, 8, 10];
+//   let diziToplamSonucu = diziToplami(sayilar);
+//   console.log(diziToplamSonucu); // Çıktı: 30
+
+// //! Çift sayıyı bulan function yazdıralım
+
+// function ciftSayilariBul(n) {
+//     let ciftSayilar = [];
+//     for (let i = 1; i <= n; i++) {
+//       if (i % 2 === 0) {
+//         ciftSayilar.push(i);
+//       }
+//     }
+//     return ciftSayilar;
+//   }
+  
+//   let n = 10;
+//   let ciftSayilarSonucu = ciftSayilariBul(n);
+//   console.log(ciftSayilarSonucu); // Çıktı: [2, 4, 6, 8, 10]
+
+
+//   //!  Kişileri bulan function yazalım 
+
+//   function kisiBul(kisiler, ad) {
+//     return kisiler.find((kisi) => kisi.ad === ad);
+//   }
+  
+//   let kisiler = [
+//     { ad: "Ahmet", yas: 25 },
+//     { ad: "Mehmet", yas: 30 },
+//     { ad: "Ayşe", yas: 28 }
+//   ];
+  
+//   let arananKisi = kisiBul(kisiler, "Mehmet");
+//   console.log(arananKisi); // Çıktı: { ad: "Mehmet", yas: 30 }
+
+// //! Öğrenci notunun değerlendirildiği (AA-BB-CC-DD) function yazalım
+
+// function notuDegerlendir(not) {
+//     let durum = "";
+//     if (not >= 90) {
+//       durum = "AA";
+//     } else if (not >= 80) {
+//       durum = "BA";
+//     } else if (not >= 70) {
+//       durum = "BB";
+//     } else if (not >= 60) {
+//       durum = "CB";
+//     } else if (not >= 50) {
+//       durum = "CC";
+//     } else if (not >= 40) {
+//       durum = "DC";
+//     } else if (not >= 30) {
+//       durum = "DD";
+//     } else {
+//       durum = "FF";
+//     }
+//     return durum;
+//   }
+  
+//   let notDurumu = notuDegerlendir(75);
+//   console.log(notDurumu); // Çıktı: "BB" 
+
+//   //! Bir alışveriş sepetindeki ürünlerin toplam tutarına göre 
+//   //! İndirim miktarını hesaplayan ve ödenecek tutarı belirleyen bir fonksiyon yazalım 
+
+//   function indirimDurumuHesapla(sepetToplami) {
+//     let indirimYuzdesi = 0;
+    
+//     if (sepetToplami >= 1000) {
+//       indirimYuzdesi = 25;
+//     } else if (sepetToplami >= 300) {
+//       indirimYuzdesi = 15;
+//     }
+    
+//     return indirimYuzdesi;
+//   }
+  
+//   function sepetToplaminiHesapla(sepet) {
+//     let toplam = 0;
+//     for (let i = 0; i < sepet.length; i++) {
+//       toplam += sepet[i].fiyat;
+//     }
+//     return toplam;
+//   }
+  
+//   let sepet = [
+//     { urunAdi: "Ürün 1", fiyat: 150 },
+//     { urunAdi: "Ürün 2", fiyat: 250 },
+//     { urunAdi: "Ürün 3", fiyat: 500 }
+//   ];
+  
+//   let sepetToplami = sepetToplaminiHesapla(sepet);
+//   let indirimYuzdesi = indirimDurumuHesapla(sepetToplami);
+//   let indirimMiktari = (sepetToplami * indirimYuzdesi) / 100;
+//   let odenecekTutar = sepetToplami - indirimMiktari;
+  
+//   console.log("Sepet Toplamı: " + sepetToplami + " TL");
+//   console.log("İndirim Yüzdesi: " + indirimYuzdesi + "%");
+//   console.log("İndirim Miktarı: " + indirimMiktari + " TL");
+//   console.log("Ödenecek Tutar: " + odenecekTutar + " TL");
+
+
+
+//   //! Arrow Function
+
+//  //* arrow function JavaScript'te bir fonksiyonu kısa ve anlaşılır bir şekilde tanımlamak için kullanılmaktadır.
+
+// //  let fonksiyonAdi = (parametre1, parametre2,) => {
+// //   // Fonksiyon gövdesi
+// //   return deger;
+// // };
+
+
+// // /* Örnek */
+
+// // // Toplama işlemini gerçekleştiren arrow function
+// // let toplama = (sayi1, sayi2) => {
+// //   return sayi1 + sayi2;
+// // };
+
+// // // Kısa ve sade yazılmış arrow function
+// // let kareAl = sayi => sayi * sayi;
+
+// // // Çıktıları konsola yazdırma
+// // console.log(toplama(5, 3)); // Çıktı: 8
+// // console.log(kareAl(4)); // Çıktı: 16
+
+
+// // /* Örnek */ 
+
+// // let ogrenciler = [
+// //   { ad: 'Ahmet', yas: 18 },
+// //   { ad: 'Mehmet', yas: 20 },
+// //   { ad: 'Ayşe', yas: 19 },
+// //   { ad: 'Fatma', yas: 21 }
+// // ];
+
+// // // Yaşı 20 olan öğrenciyi bulma
+// // let hedefOgrenci = ogrenciler.find(ogrenci => ogrenci.yas === 20);
+
+// // console.log(hedefOgrenci); // Çıktı: { ad: 'Mehmet', yas: 20 }
+
+// // /* Örnek */
+
+// // let ogrenciler = [
+// //   { ad: 'Ahmet', yas: 18 },
+// //   { ad: 'Mehmet', yas: 20 },
+// //   { ad: 'Ayşe', yas: 19 },
+// //   { ad: 'Fatma', yas: 21 }
+// // ];
+
+// // // Yaşı 19'dan büyük olan öğrencileri filtreleme
+// // let secilenOgrenciler = ogrenciler.filter(ogrenci => ogrenci.yas > 19);
+
+// // console.log(secilenOgrenciler);
+// // // Çıktı: [
+// // //   { ad: 'Mehmet', yas: 20 },
+// // //   { ad: 'Fatma', yas: 21 }
+// // // ]
+
+// // /* örnek */
+
+// // let ogrenciler = [
+// //   { ad: 'Ahmet', yas: 18 },
+// //   { ad: 'Mehmet', yas: 20 },
+// //   { ad: 'Ayşe', yas: 19 },
+// //   { ad: 'Fatma', yas: 21 }
+// // ];
+
+// // // Öğrenci adlarını içeren yeni bir dizi oluşturma
+// // let ogrenciAdlari = ogrenciler.map(ogrenci => ogrenci.ad);
+
+// // console.log(ogrenciAdlari);
+// // // Çıktı: ['Ahmet', 'Mehmet', 'Ayşe', 'Fatma']
+
+// // ! Closures - Kapanışlar 
+// // * Bir fonksiyonun dışarıdaki değişkenleri ve kapsamı koruyabilmesini sağlayan önemli bir JavaScript konseptidir. 
+// // * Bir fonksiyonun, kendi kapsamında tanımlanan değişkenlerin yanı sıra, 
+// // * üst kapsamdaki değişkenlere de erişebilmesini ve onları hatırlayabilmesini ifade eder. 
+// // * Böylece, bir fonksiyon başka bir kapsamda çağrılsa bile o kapsamdaki değişkenlere erişebilir. 
+// // * Bu, işlevlerin daha esnek ve güçlü hale gelmesini sağlar.
+
+// // ? Closures örnek
+
+// // function sayHelloTo(name) {
+// //   // * İç fonksiyon (closure)
+// //   function greetingMessage() {
+// //     return "Merhaba, " + name + "!";
+// //   }
+
+// //   return greetingMessage;
+// // }
+
+// // // * greetTugce, sayHelloTo fonksiyonunu çağırdıktan sonra hala name değişkenine erişebilir
+// // const greetTugce = sayHelloTo("Tugce");
+
+// // // * greetBerk, sayHelloTo fonksiyonunu çağırdıktan sonra hala name değişkenine erişebilir
+// // const greetBerk = sayHelloTo("Berk");
+
+// // // * greetTugce ve greetBerk, içlerindeki name değişkenlerini hatırlar
+// // console.log(greetTugce()); // ? Çıktı: "Merhaba, Tugce!"
+// // console.log(greetBerk()); // ? Çıktı: "Merhaba, Berk!"
+
+
+
+// Neden Closure Kullanılır?
+// Veri Gizliliği Sağlar:
+
+// Dış fonksiyonun değişkenleri, iç fonksiyon sayesinde korunur. Harici kodlar bu değişkenlere doğrudan erişemez.
+// Fonksiyonlara Esneklik Katar:
+
+// Closure sayesinde bir fonksiyonun farklı parametrelerle "özel" versiyonlarını oluşturabilirsiniz.
